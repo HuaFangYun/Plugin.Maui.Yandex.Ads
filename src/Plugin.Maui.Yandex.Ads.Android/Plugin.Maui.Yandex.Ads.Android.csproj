@@ -5,9 +5,22 @@
 		<Nullable>enable</Nullable>
 		<Version>5.3.0.1</Version>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<Title>Plugin.Maui.Yandex.Ads.Android</Title>
+		<Description>Binding yandex.ads for .net android</Description>
+		<PackageProjectUrl>https://github.com/alex-relov</PackageProjectUrl>
+		<PackageTags>ads;yandex;maui;android</PackageTags>
+		<PackageReleaseNotes>binding for yandex.ads 5.3.0</PackageReleaseNotes>
+		<PackageIcon>logo.jpg</PackageIcon>
+		<Authors>$(AssemblyName)</Authors>
 	</PropertyGroup>
 	<ItemGroup>
 		<LibraryProjectZip Include="Jars\mobileads-5.3.0.aar">
 		</LibraryProjectZip>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\..\logo.jpg">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 </Project>

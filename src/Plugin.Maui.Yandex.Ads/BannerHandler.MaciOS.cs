@@ -5,9 +5,11 @@ namespace Plugin.Maui.Yandex.Ads;
 
 public partial class BannerHandler : ViewHandler<Banner, UIButton>
 {
-	//public BannerHandler(IPropertyMapper mapper, CommandMapper commandMapper = null) : base(mapper, commandMapper)
-	//{
-	//}
+
+	public static void MapAdUnitId(BannerHandler handler, Banner banner)
+	{
+		//handler.PlatformView?.SetAdUnitId(banner.AdUnitId);
+	}
 
 	protected override UIButton CreatePlatformView()
 	{

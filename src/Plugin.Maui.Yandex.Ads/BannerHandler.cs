@@ -16,10 +16,7 @@ namespace Plugin.Maui.Yandex.Ads;
     {
         public static IPropertyMapper<Banner, BannerHandler> PropertyMapper = new PropertyMapper<Banner, BannerHandler>(ViewHandler.ViewMapper)
         {
-            //[nameof(Video.AreTransportControlsEnabled)] = MapAreTransportControlsEnabled,
-            //[nameof(Video.Source)] = MapSource,
-            //[nameof(Video.IsLooping)] = MapIsLooping,
-            //[nameof(Video.Position)] = MapPosition
+            [nameof(Banner.AdUnitId)] = MapAdUnitId,
         };
 
         public static CommandMapper<Banner, BannerHandler> CommandMapper = new(ViewCommandMapper)
