@@ -1,9 +1,11 @@
-﻿using Microsoft.Maui.Handlers;
+﻿using CoreGraphics;
+using Microsoft.Maui.Handlers;
+using Plugin.Maui.Yandex.Ads.iOS;
 using UIKit;
 
 namespace Plugin.Maui.Yandex.Ads;
 
-public partial class BannerHandler : ViewHandler<Banner, UIButton>
+public partial class BannerHandler : ViewHandler<Banner, YMAAdView>
 {
 
 	public static void MapAdUnitId(BannerHandler handler, Banner banner)
@@ -11,10 +13,12 @@ public partial class BannerHandler : ViewHandler<Banner, UIButton>
 		//handler.PlatformView?.SetAdUnitId(banner.AdUnitId);
 	}
 
-	protected override UIButton CreatePlatformView()
+	protected override YMAAdView CreatePlatformView()
 	{
-		//YMAAdView
-		//var benner = new 
-		return new UIButton();
+		var s = YMAAdSize.YMAAdSizeBanner_300x250;
+		//var banner = new YMAAdView("",s new YMAAdViewDelegate(()));
+		var banner = new YMAAdView();
+		banner.LoadAd();
+		return banner;
 	}
 }

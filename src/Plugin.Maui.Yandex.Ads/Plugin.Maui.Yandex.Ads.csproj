@@ -73,6 +73,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="all" IsImplicitlyDefined="true" />
 		<PackageReference Include="System.Management" Version="7.0.0" Condition="$(TargetFramework.Contains('-windows')) == true" />
+
 	</ItemGroup>
 
 	<!-- Package additions -->
@@ -89,6 +90,6 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
-	  <ProjectReference Include="..\Plugin.Maui.Yandex.Ads.iOS\Plugin.Maui.Yandex.Ads.iOS.csproj" />
+			<PackageReference Include="Plugin.Maui.Yandex.Ads.iOS" Version="5.3.0.2" />
 	</ItemGroup>
 </Project>

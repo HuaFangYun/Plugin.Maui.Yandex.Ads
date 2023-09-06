@@ -1,5 +1,5 @@
 ﻿#if IOS || MACCATALYST
-using UIKit;
+using Plugin.Maui.Yandex.Ads.iOS;
 #elif ANDROID
 using Microsoft.Maui;
 using PlatformView = Com.Yandex.Mobile.Ads.Banner.BannerAdView;
