@@ -88,7 +88,7 @@
 		<ProjectReference Include="..\Plugin.Maui.Yandex.Ads.Android\Plugin.Maui.Yandex.Ads.Android.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
 	  <ProjectReference Include="..\Plugin.Maui.Yandex.Ads.iOS\Plugin.Maui.Yandex.Ads.iOS.csproj" />
 	</ItemGroup>
 </Project>
