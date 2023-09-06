@@ -1,7 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using Plugin.Maui.Feature;
+﻿using Microsoft.Extensions.Logging;
 
-namespace Plugin.Maui.Feature.Sample;
+namespace Sample;
 
 public static class MauiProgram
 {
@@ -16,9 +15,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		builder.Services.AddTransient<MainPage>();
-		//builder.Services.AddSingleton<IFeature>(Feature.Default);
+#if DEBUG
+		builder.Logging.AddDebug();
+#endif
 
 		return builder.Build();
 	}
 }
+

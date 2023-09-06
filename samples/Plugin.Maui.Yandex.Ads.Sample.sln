@@ -5,7 +5,8 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Maui.Yandex.Ads.Sample", "Plugin.Maui.Yandex.Ads.Sample\Plugin.Maui.Yandex.Ads.Sample.csproj", "{490BB138-9606-4FFF-8AAD-841C5B1ED059}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Maui.Yandex.Ads", "..\src\Plugin.Maui.Yandex.Ads\Plugin.Maui.Yandex.Ads.csproj", "{B60F3174-E978-4F2B-B117-F6F0327594C8}"
-
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{1F7F2CF8-DC73-48EE-8183-319081354653}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +24,10 @@ Global
 		{B60F3174-E978-4F2B-B117-F6F0327594C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B60F3174-E978-4F2B-B117-F6F0327594C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B60F3174-E978-4F2B-B117-F6F0327594C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7F2CF8-DC73-48EE-8183-319081354653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7F2CF8-DC73-48EE-8183-319081354653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7F2CF8-DC73-48EE-8183-319081354653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7F2CF8-DC73-48EE-8183-319081354653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
