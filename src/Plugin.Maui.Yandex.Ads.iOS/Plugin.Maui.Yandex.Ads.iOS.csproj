@@ -7,16 +7,32 @@
 		<IsBindingProject>true</IsBindingProject>
 		<IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
 		<SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+		<Version>5.3.0.2</Version>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Title>Plugin.Maui.Yandex.Ads.iOS</Title>
+		<Description>Binding yandex.ads for .net ios</Description>
+		<PackageProjectUrl>https://github.com/alex-relov</PackageProjectUrl>
+		<PackageTags>ads;yandex;maui;ios</PackageTags>
+		<PackageReleaseNotes>binding for yandex.ads 5.3.0</PackageReleaseNotes>
+		<PackageIcon>logo.jpg</PackageIcon>
+		<Authors>$(AssemblyName)</Authors>
 	</PropertyGroup>
 	
 	<ItemGroup>
-		<ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
-		<ObjcBindingCoreSource Include="StructsAndEnums.cs" />
-
 		<NativeReference Include="Frameworks\YandexMobileAds.framework">
 			<Kind>Framework</Kind>
 			<SmartLink>False</SmartLink>
 		</NativeReference>
 	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\..\logo.jpg">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+    <ObjcBindingCoreSource Include="Structs.cs" />
+  </ItemGroup>
 
 </Project>

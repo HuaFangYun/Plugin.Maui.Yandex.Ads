@@ -82,11 +82,13 @@
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
 
-		<PackageReference Include="Xamarin.AppMetrica.Android">
-			<Version>5.0.1</Version>
+		<PackageReference Include="Xamarin.AppMetrica.Android" Version="5.0.1">
 		</PackageReference>
 
 		<ProjectReference Include="..\Plugin.Maui.Yandex.Ads.Android\Plugin.Maui.Yandex.Ads.Android.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\Plugin.Maui.Yandex.Ads.iOS\Plugin.Maui.Yandex.Ads.iOS.csproj" />
+	</ItemGroup>
 </Project>

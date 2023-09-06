@@ -13,6 +13,7 @@ public partial class BannerHandler : ViewHandler<Banner, UIButton>
 
 	protected override UIButton CreatePlatformView()
 	{
+		//var benner = new 
 		return new UIButton();
 	}
 }
