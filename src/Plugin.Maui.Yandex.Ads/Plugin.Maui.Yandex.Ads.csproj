@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-ios</TargetFrameworks>
+		<TargetFrameworks>net7.0-ios;net7.0-android;</TargetFrameworks>
 		<!--<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst;net7.0</TargetFrameworks>-->
 		<!--<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>-->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
@@ -11,31 +11,21 @@
 		<UseMauiEssentials>true</UseMauiEssentials>
 		<UseMaui>true</UseMaui>
 
+		<Title>Plugin.Maui.Yandex.Ads</Title>
+		<Description>Yandex.ads for .net maui</Description>
+		<PackageProjectUrl>https://github.com/alex-relov</PackageProjectUrl>
+		<PackageTags>ads;yandex;maui;android;ios</PackageTags>
+		<PackageReleaseNotes>binding for yandex.ads 5.3.0</PackageReleaseNotes>
+		<PackageIcon>logo.jpg</PackageIcon>
+		<Authors>$(AssemblyName)</Authors>
+
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-
-		<!-- NuGet -->
-		<Authors>author</Authors>
-		<Copyright>Copyright © author and contributors</Copyright>
-		<IsPackable>True</IsPackable>
-		<PackageProjectUrl>https://github.com/jfversluis/Plugin.Maui.Feature</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/jfversluis/Plugin.Maui.Feature</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
-		<PackageTags>dotnet-maui;maui;plugin;</PackageTags>
-		<IncludeSymbols>True</IncludeSymbols>
-		<PublishRepositoryUrl>true</PublishRepositoryUrl>
-		<EmbedUntrackedSources>true</EmbedUntrackedSources>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<Title>.NET MAUI Feature Plugin</Title>
-		<Description>Plugin.Maui.Feature provides the ability to do this amazing thing in your .NET MAUI application.</Description>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<DebugType>portable</DebugType>
-		<PackageIcon>icon.png</PackageIcon>
+		<Version>5.3.0-alpha-1</Version>
 	</PropertyGroup>
 
 	<!-- iOS & MacCatalyst -->
@@ -80,19 +70,23 @@
 	</ItemGroup>
 
 	<!-- Package additions -->
-	<ItemGroup>
-		<None Include="..\..\nuget.png" PackagePath="icon.png" Pack="true" />
-	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
 
 		<PackageReference Include="Xamarin.AppMetrica.Android" Version="5.0.1">
 		</PackageReference>
-
-		<ProjectReference Include="..\Plugin.Maui.Yandex.Ads.Android\Plugin.Maui.Yandex.Ads.Android.csproj" />
+		<PackageReference Include="Plugin.Maui.Yandex.Ads.Android" Version="5.3.0.1" />
+		<!--<ProjectReference Include="..\Plugin.Maui.Yandex.Ads.Android\Plugin.Maui.Yandex.Ads.Android.csproj" />-->
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
 			<PackageReference Include="Plugin.Maui.Yandex.Ads.iOS" Version="5.3.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\logo.jpg">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
 	</ItemGroup>
 </Project>
