@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net7.0-ios16.2</TargetFrameworks>
+		<TargetFrameworks>net7.0-ios</TargetFrameworks>
 		<!--<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst;net7.0</TargetFrameworks>-->
 		<!--<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>-->
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
@@ -92,7 +92,7 @@
 		<ProjectReference Include="..\Plugin.Maui.Yandex.Ads.Android\Plugin.Maui.Yandex.Ads.Android.csproj" />
 	</ItemGroup>
 
-	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios16.2'">
-			<PackageReference Include="Plugin.Maui.Yandex.Ads.iOS" Version="5.3.0.2" />
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-ios'">
+			<PackageReference Include="Plugin.Maui.Yandex.Ads.iOS" Version="5.3.0.3" />
 	</ItemGroup>
 </Project>
