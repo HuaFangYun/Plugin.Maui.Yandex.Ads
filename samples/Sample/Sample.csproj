@@ -13,7 +13,7 @@
 		<ApplicationTitle>Sample</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.sample</ApplicationId>
+		<ApplicationId>com.companyname.sample-ads</ApplicationId>
 		<ApplicationIdGuid>d96aac34-f061-4424-8254-fb566ae7a8f6</ApplicationIdGuid>
 
 		<!-- Versions -->
