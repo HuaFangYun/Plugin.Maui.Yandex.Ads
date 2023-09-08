@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-android</TargetFramework>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+		<Nullable>enable</Nullable>
+		<Version>5.0.0.1</Version>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Title>Plugin.Maui.Yandex.Metrika.Android</Title>
+		<Description>Binding yandex.metrika for .net android</Description>
+		<PackageProjectUrl>https://github.com/alex-relov</PackageProjectUrl>
+		<PackageTags>metrika;yandex;maui;android</PackageTags>
+		<PackageReleaseNotes>binding for yandex.Metrika 5.0.1</PackageReleaseNotes>
+		<PackageIcon>logo.jpg</PackageIcon>
+		<Authors>$(AssemblyName)</Authors>
+	</PropertyGroup>
+	<ItemGroup>
+		<LibraryProjectZip Include="Jars\mobmetricalib-5.0.1_patched.aar">
+		</LibraryProjectZip>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Include="..\..\logo.jpg">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
