@@ -33,6 +33,8 @@
 		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+		<CodesignKey>Apple Development: Created via API (838G3S38F7)</CodesignKey>
+		<CodesignProvision>VS: WildCard Development</CodesignProvision>
 		<CreatePackage>false</CreatePackage>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios16.1|AnyCPU'">
