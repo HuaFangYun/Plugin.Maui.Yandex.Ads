@@ -68,7 +68,11 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\src\Plugin.Maui.Yandex.Ads\Plugin.Maui.Yandex.Ads.csproj" />
 	</ItemGroup>
-	<PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
+	<!--<PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
 		<RuntimeIdentifier>ios-x86</RuntimeIdentifier>
 	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+
+	</PropertyGroup>-->
 </Project>
