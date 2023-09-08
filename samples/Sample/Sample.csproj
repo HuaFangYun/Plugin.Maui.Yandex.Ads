@@ -71,5 +71,5 @@
 	</ItemGroup>
 	<!--<PropertyGroup Condition="$(TargetFramework.Contains('-ios'))">
 		<RuntimeIdentifier>ios-x86</RuntimeIdentifier>
-	</PropertyGroup>
+	</PropertyGroup>-->
 </Project>
