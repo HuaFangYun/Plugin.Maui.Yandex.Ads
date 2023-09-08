@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:pl="clr-namespace:Plugin.Maui.Yandex.Ads;assembly=Plugin.Maui.Yandex.Ads"
              x:Class="Sample.MainPage">
 
     <ScrollView>
@@ -8,8 +9,8 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-
-            <Image
+			<pl:Banner AdUnitId="R-M-DEMO-320x50" />
+			<Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
