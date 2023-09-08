@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0-ios15.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>true</ImplicitUsings>
+		<IsBindingProject>true</IsBindingProject>
+		<IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+		<SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
+		<Version>2.2.0.1-alpha-1</Version>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Title>Plugin.Maui.Yandex.Metrika.iOS</Title>
+		<Description>Binding yandex.appmetrika for .net ios</Description>
+		<PackageProjectUrl>https://github.com/alex-relov</PackageProjectUrl>
+		<PackageTags>metrika;yandex;maui;ios</PackageTags>
+		<PackageReleaseNotes>binding for yandex.metrika 2.2.0</PackageReleaseNotes>
+		<PackageIcon>logo.jpg</PackageIcon>
+		<Authors>$(AssemblyName)</Authors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<NativeReference Include="Frameworks\YandexMobileMetrica.framework">
+			<Kind>Framework</Kind>
+			<SmartLink>True</SmartLink>
+			<LinkerFlags>-ObjC -lz -lc++ -lsqlite3 -lxml2</LinkerFlags>
+			<Frameworks>SystemConfiguration Security UIKit Foundation CoreTelephony CoreLocation CoreGraphics AdSupport StoreKit</Frameworks>
+		</NativeReference>
+		<NativeReference Include="Frameworks\YandexMobileMetricaCrashes.framework">
+			<Kind>Framework</Kind>
+			<SmartLink>True</SmartLink>
+			<LinkerFlags>-ObjC -lz -lc++ -lsqlite3 -lxml2</LinkerFlags>
+			<Frameworks>SystemConfiguration Security UIKit Foundation CoreTelephony CoreLocation CoreGraphics AdSupport StoreKit</Frameworks>
+		</NativeReference>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\logo.jpg">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+		<ObjcBindingCoreSource Include="Structs.cs" />
+	</ItemGroup>
+
+</Project>

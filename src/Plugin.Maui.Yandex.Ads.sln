@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Maui.Yandex.Ads", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Maui.Yandex.Ads.Android", "Plugin.Maui.Yandex.Ads.Android\Plugin.Maui.Yandex.Ads.Android.csproj", "{5F64EB9C-07A6-42C4-B5F7-8249E03C7DF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.Maui.Yandex.Ads.iOS", "Plugin.Maui.Yandex.Ads.iOS\Plugin.Maui.Yandex.Ads.iOS.csproj", "{B43CE6F4-CCDA-4CF8-9138-2F629C74D9BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Maui.Yandex.Ads.iOS", "Plugin.Maui.Yandex.Ads.iOS\Plugin.Maui.Yandex.Ads.iOS.csproj", "{B43CE6F4-CCDA-4CF8-9138-2F629C74D9BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.Maui.Yandex.Metrika.iOS", "Plugin.Maui.Yandex.Metrika.iOS\Plugin.Maui.Yandex.Metrika.iOS.csproj", "{1068256F-E643-4969-A9F4-693C70752839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{B43CE6F4-CCDA-4CF8-9138-2F629C74D9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B43CE6F4-CCDA-4CF8-9138-2F629C74D9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B43CE6F4-CCDA-4CF8-9138-2F629C74D9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1068256F-E643-4969-A9F4-693C70752839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1068256F-E643-4969-A9F4-693C70752839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1068256F-E643-4969-A9F4-693C70752839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1068256F-E643-4969-A9F4-693C70752839}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

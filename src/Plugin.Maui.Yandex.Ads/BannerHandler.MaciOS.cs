@@ -15,6 +15,7 @@ public partial class BannerHandler : ViewHandler<Banner, YMAAdView>
 
 	protected override YMAAdView CreatePlatformView()
 	{
+		new YMAMobileAds().Init();
 		var s = YMAAdSize.YMAAdSizeBanner_300x250;
 		var inl = YMAAdSize.FlexibleSizeWithCGSize(s);
 		// = s;
