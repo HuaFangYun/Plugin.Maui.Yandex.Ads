@@ -9,7 +9,8 @@
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
-			<pl:Banner AdUnitId="R-M-DEMO-320x50" />
+			<pl:Banner AdUnitId="R-M-DEMO-320x50" BackgroundColor="Red"
+              HorizontalOptions="FillAndExpand"/>
 			<Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"

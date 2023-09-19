@@ -20,27 +20,23 @@ public partial class BannerHandler : ViewHandler<Banner, YMAAdView>
 		var s = YMAAdSize.YMAAdSizeBanner_300x250;
 		var inl = YMAAdSize.FlexibleSizeWithCGSize(s);
 		// = s;
-		var banner = new YMAAdView(VirtualView.AdUnitId,inl,new YMAAdViewDelegate());
+		var banner = new YMAAdView(VirtualView.AdUnitId,inl,new CustomP());
 		//var banner = new YMAAdView();
 		banner.LoadAd();
 		return banner;
 	}
 }
 
-public class myYMAAdViewDelegate : YMAAdViewDelegate
+class CustomP : YMAAdViewDelegate
 {
-	public override void AdViewDidLoad(YMAAdView adView)
+
+	public virtual void AdViewDidLoad(YMAAdView adView)
 	{
-		base.AdViewDidLoad(adView);
+		throw new System.NotImplementedException();
 	}
 
-	public override void AdViewWillLeaveApplication(YMAAdView adView)
+	public override void AdViewDidFailLoading(YMAAdView adView, Foundation.NSError error)
 	{
-		base.AdViewWillLeaveApplication(adView);
-	}
-
-	public override void AdViewDidFailLoading(YMAAdView adView, NSError error)
-	{
-		base.AdViewDidFailLoading(adView, error);
+		throw new System.NotImplementedException();
 	}
 }
