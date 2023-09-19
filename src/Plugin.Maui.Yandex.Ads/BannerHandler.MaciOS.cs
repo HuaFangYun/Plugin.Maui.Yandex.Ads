@@ -1,4 +1,5 @@
 ﻿using CoreGraphics;
+using Foundation;
 using Microsoft.Maui.Handlers;
 using Plugin.Maui.Yandex.Ads.iOS;
 using UIKit;
@@ -23,5 +24,23 @@ public partial class BannerHandler : ViewHandler<Banner, YMAAdView>
 		//var banner = new YMAAdView();
 		banner.LoadAd();
 		return banner;
+	}
+}
+
+public class myYMAAdViewDelegate : YMAAdViewDelegate
+{
+	public override void AdViewDidLoad(YMAAdView adView)
+	{
+		base.AdViewDidLoad(adView);
+	}
+
+	public override void AdViewWillLeaveApplication(YMAAdView adView)
+	{
+		base.AdViewWillLeaveApplication(adView);
+	}
+
+	public override void AdViewDidFailLoading(YMAAdView adView, NSError error)
+	{
+		base.AdViewDidFailLoading(adView, error);
 	}
 }
