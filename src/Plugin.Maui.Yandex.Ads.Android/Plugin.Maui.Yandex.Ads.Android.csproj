@@ -1,9 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
 	<PropertyGroup>
-		<TargetFramework>net7.0-android</TargetFramework>
+		<TargetFrameworks>MonoAndroid12.0;MonoAndroid13.0;</TargetFrameworks>
+		<TargetFrameworks>$(TargetFrameworks)net7.0-android</TargetFrameworks>
+		<LangVersion>latest</LangVersion>
 		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
 		<Nullable>enable</Nullable>
-		<Version>5.3.0.1</Version>
+		<Version>5.3.0.1-alpha1</Version>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Title>Plugin.Maui.Yandex.Ads.Android</Title>
 		<Description>Binding yandex.ads for .net android</Description>
