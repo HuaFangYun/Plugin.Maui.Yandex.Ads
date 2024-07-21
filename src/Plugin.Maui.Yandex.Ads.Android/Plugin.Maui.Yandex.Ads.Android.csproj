@@ -1,7 +1,6 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
 	<PropertyGroup>
-		<TargetFrameworks>MonoAndroid12.0;MonoAndroid13.0;</TargetFrameworks>
-		<TargetFrameworks>$(TargetFrameworks)net7.0-android</TargetFrameworks>
+		<TargetFramework>net8.0-android</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
 		<Nullable>enable</Nullable>
